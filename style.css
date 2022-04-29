@@ -1,0 +1,113 @@
+:root {
+    /* Primary */
+    --red-color: hsl(0, 78%, 62%);
+    --cyan-color: hsl(180, 62%, 55%);
+    --orange-color: hsl(34, 97%, 64%);
+    --blue-color: hsl(212, 86%, 64%);
+    /* Neutral */
+    --very-dark-blue: hsl(234, 12%, 34%) ;
+    --grayish-blue: hsl(229, 6%, 66%) ;
+    --very-light-gray: hsl(0, 0%, 98%) ;
+}
+
+* {
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background-color: var(--very-light-gray);
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    margin: 50px 0;
+}
+
+.tittle {
+    text-align: center;
+}
+
+.tittle h1::first-line {
+    font-weight: 200;
+}
+
+.tittle h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+
+.tittle h2 {
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin: 14px 0 40px; 
+    color: var(--very-dark-blue);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+    padding: 22px;
+    border-top: 3px solid ;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: white;
+    box-shadow: 0px 0.6rem 1.4rem hsl(0deg 0% 80%);
+}
+
+.cyan {
+    border-color: var(--cyan-color);
+}
+
+.red {
+    border-color: var(--red-color);
+}
+
+.orange {
+    border-color: var(--orange-color);
+}
+
+.blue {
+    border-color: var(--blue-color);
+}
+
+.card-content {
+    margin-bottom: 34px;
+}
+
+.card-content h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+
+.card-content h3 {
+    margin-top: 4px;
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: var(--very-dark-blue);
+}
+
+img {
+    width: 56px;
+    align-self: flex-end;
+}
+
+
+
